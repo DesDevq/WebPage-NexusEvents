@@ -1,0 +1,95 @@
+/* Styles.css */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.Logo-css {
+    display: flex;
+        width: 70px;
+        height: 70px;
+        background: gray;
+        border-radius: 50%;
+        margin-right: 10px;
+}
+
+.Navbar {
+    display: flex;
+    justify-content: space-between;
+    /* Espacia los elementos de manera equitativa */
+    align-items: center;
+    width: 100%;
+    height: 80px;
+    /* Altura del navbar */
+    background-color: black;
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 0 20px;
+    box-sizing: border-box;
+    z-index: 1000;
+    /* Asegura que el navbar esté por encima de otros elementos */
+}
+
+
+.NexusEvents {
+    margin: 0;
+    display: flex;
+    color: #DAA520;
+}
+
+.Nav-links-container {
+    flex-grow: 1;
+    display: flex;
+    justify-content: flex-end;
+    margin: 0 20px;
+}
+
+.Nav-links {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+.Nav-links li {
+    margin-left: 20px;
+}
+
+.Nav-links a {
+    color: #DAA520;
+    text-decoration: none;
+    position: relative;
+    /* Necesario para la pseudo-clase ::after */
+}
+
+.Nav-links a::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -2px;
+    /* Ajusta según necesites */
+    width: 100%;
+    height: 2px;
+    /* Ajusta el grosor de la línea */
+    background-color: #DAA520;
+    /* Color de la línea */
+    transform: translateX(-50%) scaleX(0);
+    /* Inicia desde el centro con escala 0 */
+    transform-origin: center;
+    /* Origina la transformación desde el centro */
+    transition: transform 0.3s ease;
+    /* Duración de la animación */
+}
+
+.Nav-links a:hover::after {
+    transform: translateX(-50%) scaleX(1);
+    /* Escala a tamaño completo al hacer hover */
+}
+
+.content {
+    padding-top: 60px;
+    /* Igual a la altura del navbar */
+}
