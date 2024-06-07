@@ -12,8 +12,8 @@ export const Navbar = () => {
        <div className='Nav-links-container'>
      <ul className='Nav-links'>
         <li ><a href='#Inicio'>INICIO</a></li>
-        <li ><a href='#Servicios'>SERVICIOS</a></li>
         <li ><a href='#Nosotros'>NOSOTROS</a></li>
+        <li ><a href='#Servicios'>SERVICIOS</a></li>
         <li ><a href='#Contacto'>CONTACTO</a></li>
      </ul>
      </div>
@@ -30,6 +30,58 @@ export const Navbar = () => {
               empresariales</strong>
             </p>
             <a href='' className='hero-btn'>Contactanos</a>
+        </div>
+
+        <div className='Sobre'>
+          <h1>NOSOTROS</h1>
+          <div className='Decoracion-nosotros'></div>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <div className='Card-container'>
+            <div className='Card'>
+              <div className='Card-content'>
+                <h3>MISION</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              </div>
+            </div>
+            <div className='Card'>
+              <div className='Card-content'>
+                <h3>VISION</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+              </div>
+            </div>
+            <div className='Card'>
+              <div className='Card-content'>
+                <h3>OBJETIVOS</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+         <div className='Cuadro-container'>
+          <div className='Cuadro-datosempresa'>
+            <div className='Cuadro-contenido'>
+              <div className='Cuadro-item'>
+                <h2>2024</h2>
+                <h3>Año de establecimiento</h3>
+              </div>
+              <div className='Cuadro-item'>
+                <h2>22</h2>
+                <h3>Empleados en la empresa</h3>
+              </div>
+              <div className='Cuadro-item'>
+                <h2>S.A.S</h2>
+                <h3>Tipo de empresa</h3>
+              </div>
+              <div className='Cuadro-item'>
+                <h2>No se</h2>
+                <h3>Clase de empresa</h3>
+              </div>
+              <div className='Cuadro-item'>
+                <h2>Empresa</h2>
+                <h3></h3>
+              </div>
+            </div>
+          </div>
         </div>
     </>
   )

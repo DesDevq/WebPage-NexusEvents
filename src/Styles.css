@@ -7,17 +7,21 @@ body {
     background: #F5F5F5;
 }
 
+*{
+    box-sizing: border-box;
+}
+
 .Logo-css {
     display: flex;
     width: 70px;
     height: 70px;
     background: gray;.image-container {
-    margin-top: 60px; /* Height of the navbar */
-    text-align: center; /* Center the image horizontally */
+    margin-top: 60px; 
+    text-align: center; 
 }
 
 .Inicio {
-    padding-top: 20px; /* Additional spacing if needed */
+    padding-top: 20px; 
 }
 
 .Content {
@@ -25,8 +29,8 @@ body {
     text-align: center;
 }
 .image-container {
-    margin-top: 6cqh; /* Height of the navbar */
-    text-align: center; /* Center the image horizontally */
+    margin-top: 6cqh; 
+    text-align: center; 
 }
 
 
@@ -41,11 +45,9 @@ body {
 .Navbar {
     display: flex;
     justify-content: space-between;
-    /* Espacia los elementos de manera equitativa */
     align-items: center;
     width: 100%;
     height: 80px;
-    /* Altura del navbar */
     background-color: black;
     color: white;
     position: fixed;
@@ -54,7 +56,6 @@ body {
     padding: 0 20px;
     box-sizing: border-box;
     z-index: 1000;
-    /* Asegura que el navbar esté por encima de otros elementos */
 }
 
 
@@ -88,7 +89,6 @@ body {
     color: #DAA520;
     text-decoration: none;
     position: relative;
-    /* Necesario para la pseudo-clase ::after */
 }
 
 .Nav-links a::after {
@@ -96,23 +96,16 @@ body {
     position: absolute;
     left: 50%;
     bottom: -2px;
-    /* Ajusta según necesites */
     width: 100%;
     height: 2px;
-    /* Ajusta el grosor de la línea */
     background-color: #DAA520;
-    /* Color de la línea */
     transform: translateX(-50%) scaleX(0);
-    /* Inicia desde el centro con escala 0 */
     transform-origin: center;
-    /* Origina la transformación desde el centro */
     transition: transform 0.3s ease;
-    /* Duración de la animación */
 }
 
 .Nav-links a:hover::after {
     transform: translateX(-50%) scaleX(1);
-    /* Escala a tamaño completo al hacer hover */
 }
 
 .Content {
@@ -123,7 +116,7 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 2;
-    text-align: center; /* Ensure text is centered */
+    text-align: center; 
     font-family: 'Playfair Display', serif;
 }
 
@@ -141,31 +134,25 @@ body {
     position: relative;
     width: 100%;
     height: calc(100vh - 80px);
-    /* Full height minus the navbar height */
     overflow: hidden;
-    /* Ensures no scrollbars */
     text-align: center;
-    /* Center the image horizontally */
     top: 80px;
-    /* Pushes the container down below the navbar */
 }
 
 .below-navbar-image {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    /* Cover the entire area without distorting the image */
 }
 
 .image-overlay {
     position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: rgba(0, 0, 0, 0.5);
-        /* Black overlay with 40% opacity */
-        z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
 }
 
 .hero-btn {
@@ -185,4 +172,125 @@ body {
     border: 1px solid #DAA520;
     background: #DAA520;
     transition: 1s;
+}
+
+/* Nosotros contenido */
+.Sobre {
+    padding: 50px 20px;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.Sobre h1 {
+    margin-top: 80px;;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+.Sobre p {
+    margin: 50px 70px;
+    font-size: 1rem;
+    color: #333333;
+    line-height: 1.6;
+    text-align: center;
+}
+
+.Decoracion-nosotros {
+        width: 100%;
+        height: 3px;
+        background-color: #DAA520;
+        margin-top: 10px;
+        margin-bottom: 10px;
+}
+
+.Card-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 100px;
+}
+
+.Card {
+    width: 325px;
+    height: 350px;
+    background-color: #F7E7CE;
+    border-radius: 35px;
+    overflow: hidden;
+    margin: -30px 20px;
+
+}
+
+.Card-content {
+    padding: 20px;
+    color: white;
+}
+
+.Card-content h3{
+    font-size: 2.0rem;
+    color: black;
+}
+
+.Card-content p {
+    color: white;
+}
+
+/* Cuadro datos de la empresa */
+
+.Cuadro-container {
+    display: flex;
+    margin-top: 50px;
+    flex-wrap: wrap;
+}
+
+.Cuadro-datosempresa {
+    width: 100%;
+    height: 200px;
+    background-color: #F0C64E;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Cuadro-contenido {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.Cuadro-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 10px;
+    position: relative;
+}
+
+.Cuadro-item::after {
+    content: '';
+    position: absolute;
+    right: -50px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 3px;
+    height: 60%;
+    background-color: white;
+}
+
+.Cuadro-item:last-child::after {
+    content: none;
+}
+
+.Cuadro-item h2,
+.Cuadro-item h3 {
+    margin: 0;
+}
+
+.Cuadro-item h2 {
+    font-size: 3.0rem;
+    margin-bottom: 10px;
+}
+
+.Cuadro-item h3 {
+    margin-top: 10px;
 }
