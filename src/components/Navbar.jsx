@@ -31,7 +31,6 @@ export const Navbar = () => {
             </p>
             <a href='' className='hero-btn'>Contactanos</a>
         </div>
-
         <div className='Sobre'>
           <h1>NOSOTROS</h1>
           <div className='Decoracion-nosotros'></div>
@@ -82,6 +81,33 @@ export const Navbar = () => {
               </div>
             </div>
           </div>
+        </div>
+        <div className='Servicios-container'>
+        <h1>SERVICIOS</h1>
+        <div className='Decoracion-servicios'></div>
+          <div className='Servicios'>
+          <div className='Servicios-col'>
+            <img src='./Decoration.jpeg'></img>
+            <div className='Servicios-text'>
+            <h3>Decoracion</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>            
+            </div>
+          </div>
+          <div className='Servicios-col'>
+            <img src='./organizacion-empresa.jpeg'></img>
+            <div className='Servicios-text'>
+            <h3>Logistica</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+          </div>
+          <div className='Servicios-col'>
+            <img src='./capacitacion.jpg'></img>
+            <div className='Servicios-text'>
+            <h3>Capacitacion</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+          </div>
+        </div>
         </div>
     </>
   )
